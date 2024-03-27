@@ -12,7 +12,6 @@ void crearCarpeta(char *dir) {
     if (stat(dir, &st) == -1) {
         mkdir(dir, 0700);
     }
-  
 }
 
 int get_GEN(int NumPKMN) {
