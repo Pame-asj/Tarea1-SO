@@ -8,3 +8,4 @@ Ejecutar con:
 Para eliminar rápidamente los archivos creados, usar: make clean
 
 Notas: 
+Consideramos que la carpeta que contiene los .png de los pokémons se encuentra descomprimida y tiene como nombre "pokemons".
