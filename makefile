@@ -1,5 +1,2 @@
-run: main.c
-	gcc -o run main.c
+run: 
 clean:
-	rm -f run *.o 
-	rm -f RegistroPokemon.txt
