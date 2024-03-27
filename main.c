@@ -153,6 +153,7 @@ int main() {
     fprintf(new_file, "\nAlfabético\n\n");
     for(char letra = 'A'; letra <= 'Z'; letra++) {
         pos = letra - 'A';
+        printf("%d\n", cant_letras[pos]);
         fprintf(new_file, "%c - %d\n", letra, cant_letras[pos]);
     }
 
