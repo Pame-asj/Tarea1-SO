@@ -52,8 +52,7 @@ void copiaF(char *source, char *destination) {
     fclose(dst);
 }
 
-//////////////////////////////7
-
+//////////////////////////////
 
 int main() {
   
@@ -64,8 +63,6 @@ int main() {
         printf("No se pudo abrir el directorio");
         return 0;
     }
-
-    //char letra;
 
     crearCarpeta("./Alfabetico");
     for(char letra = 'A'; letra <= 'Z'; letra++) {
@@ -88,6 +85,7 @@ int main() {
 
     int cant_letras[25];
     int suma = 0;
+    int pos;
 
     while ((de = readdir(dr)) != NULL) {
         char *filename = de->d_name;
@@ -98,7 +96,8 @@ int main() {
             for(char letra = 'a'; letra <= 'z'; letra++) {
                 if (nombre == letra) {
                     suma++;
-                    cant_letras[letra - 'a'] += suma;
+                    pos = letra - 'a';
+                    cant_letras[pos] += suma;
 
                     char old_path[100];
                     sprintf(old_path, "./pokemons/%s", filename);
@@ -153,7 +152,8 @@ int main() {
     
     fprintf(new_file, "\nAlfabético\n\n");
     for(char letra = 'A'; letra <= 'Z'; letra++) {
-        fprintf(new_file, "%c - %d\n", letra, cant_letras[letra - 'A']);
+        pos = letra - 'A';
+        fprintf(new_file, "%c - %d\n", letra, cant_letras[pos]);
     }
 
     fclose(new_file);
