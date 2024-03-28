@@ -1,5 +1,5 @@
 Integrantes:
-- 
+- Enzo Erazo Aguilar, rol: 202173583-6, paralelo: 201
 - Pamela Sánchez Jara, rol: 202273538-4, paralelo: 201
 
 Instrucciones:
